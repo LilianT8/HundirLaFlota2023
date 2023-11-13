@@ -1,6 +1,6 @@
 // tablerojugador/ tablero jugador disparos
 // pc // pc
-// DE 0 A 9
+// DE 0 A 9gf
 // TABLERO JUGADFOR Y TABLERO DISPARO JUGADOR
 public class HundirFlota {
     public static void main(String[] args) {
