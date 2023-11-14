@@ -30,13 +30,14 @@ public class barcos {
     /**
      * Método para colocar en el 1º tablero del jugador las posiciones de sus propios barcos, pido coordenadas varias veces y después veo si cabe o no
      * X --> Horizontal    Y --> Vertical
+     *
      * @param tablerJugador
      * @param barcos
      */
-    public static void colocarBarcos(char[]tablerJugador , int[]barcos) {
+    public static void colocarBarcos(char[] tablerJugador, int[] barcos) {
         Scanner sc = new Scanner(System.in);
         String coordenadasTablero;
-        String orientacion ;
+        String orientacion;
         int x, y;
         boolean cabe;
         boolean choca;
@@ -45,7 +46,7 @@ public class barcos {
         System.out.println("Introduce X para horizontal o Y para vertical: ");
         orientacion = sc.next().toUpperCase();
 
-        while (!orientacion.equals('X') && !orientacion.equals('Y')){
+        while (!orientacion.equals('X') && !orientacion.equals('Y')) {
 
             System.out.println("Orientación Incorrecta, vuelve a introducir");
             System.out.println("Introduce X para horizontal o Y para vertical: ");
@@ -54,37 +55,36 @@ public class barcos {
 
         for (int i = 0; i < barcos.length; i++) {
             coordenadasTablero = pedirCoordenada();
-             if (){
+            if () {
 
-             }
-
-        }
-
-
-        }
-        public static boolean cabeBarco(char[]tableroJugador , int[] barcos, String orientacion){
-
-        for (int i = 0; i < tableroJugador.length; i++) {
-            for (int j = 0; j <tableroJugador[0].length; j++) {
-                //Si la orientacion es horizontal
-                if (orientacion.equals("X")){
-
-                    // si la fila mas la longitud del barco es menor o igual a la longitud de la primera fila del tablero
-                    tableroJugador[0][j].length + barcos[i] <= tableroJugador[0].length;
-
-                    //Si la orientación es vertical
-                } else if (orientacion.equals("Y")) {
-
-                }
             }
 
-
-
         }
-            }
-
-
 
 
     }
 
+    public static boolean cabeBarco(char[] tableroJugador, int[] barcos, String orientacion) {
+
+        for (int i = 0; i < tableroJugador.length; i++) {
+            for (int j = 0; j < tableroJugador[0].length; j++) {
+                //Si la orientacion es horizontal
+                if (orientacion.equals("X")) {
+
+                    // si la fila mas la longitud del barco es menor o igual a la longitud de la primera fila del tablero
+                    if (tableroJugador[0][j].length + barcos[i] <= tableroJugador[0].length) {
+
+                    }
+                }
+
+                //Si la orientación es vertical
+                else if (orientacion.equals("Y")) {
+                    if (i + barcos[i] <= tableroJugador.length) {
+                    }
+                }
+
+            }
+            }
+        }
+    }
+}
