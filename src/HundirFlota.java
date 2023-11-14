@@ -8,7 +8,7 @@ public class HundirFlota {
         char[][] tableroPc = new char[10][10];
         char[][] tableroDiparosJugador = new char[10][10];
         char[][] tableroDisparosPc = new char[10][10];
-        int []   barcos = {4, 3, 3, 2, 2, 1, 6};
+        int []  barcos = {4, 3, 3, 2, 2, 1, 6};
         char[] letras = {'A','B', 'C', 'D', 'E' , 'F', 'G', 'H','I','J' };
 
         rellenarTableroJugador(tableroJugador);
@@ -18,6 +18,7 @@ public class HundirFlota {
         mostrarTableroJugador(tableroJugador,letras, tableroDiparosJugador);
         System.out.println();
         mostrarTableroPc(tableroPc);
+
     }
 
 
