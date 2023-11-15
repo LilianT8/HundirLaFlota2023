@@ -45,7 +45,7 @@ public class barcos {
         int x, y;
         boolean cabe;
         boolean choca;
-        //todo coordenada es String y estoy guardando en x e y que es de tipo int
+        //todo coordenada es String y estoy guardando en x e y que es de tipo int creo que esta mal
         coordenadas = pedirCoordenada();
         x = coordenadas.charAt(0);
         y = coordenadas.charAt(1);
