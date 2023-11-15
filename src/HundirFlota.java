@@ -4,7 +4,7 @@ public class HundirFlota {
         char[][] tableroPc = new char[10][10];
         char[][] tableroDisparosJugador = new char[10][10];
         char[][] tableroDisparosPc = new char[10][10];
-        int[] barcos = {4, 3, 3, 2, 2, 1, 6};
+        int[] barcos = {4, 3, 2, 2 ,1 };
         char[] letras = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
 
         rellenarTableroJugador(tableroJugador);
@@ -19,12 +19,12 @@ public class HundirFlota {
     }
 
     public static void mostrarTablero(char[][] tableroJugador, char[] letras, char[][] tableroDisparos) {
-        System.out.println("    TABLERO JUGADOR          TABLERO DISPAROS");
+        System.out.println("    TABLERO JUGADOR            TABLERO DISPAROS JUGADOR");
         System.out.print("  ");
         for (char letra : letras) {
             System.out.print(letra + " ");
         }
-        System.out.print("     ");
+        System.out.print("           ");
         for (char letra : letras) {
             System.out.print(letra + " ");
         }
@@ -38,7 +38,7 @@ public class HundirFlota {
                 System.out.print(tableroJugador[i][j] + " ");
             }
 
-            System.out.print("     ");
+            System.out.print("         " + i + " ");
 
             // Mostrar tablero de disparos del jugador
             for (int k = 0; k < tableroDisparos[i].length; k++) {
@@ -52,12 +52,12 @@ public class HundirFlota {
 
 
     public static void mostrarTableroPc(char[][] tableroPc, char[][] tableroDisparosPc , char [] letras) {
-        System.out.println("       TABLERO PC              TABLERO DISPAROS PC");
+        System.out.println("       TABLERO PC                TABLERO DISPAROS PC");
         System.out.print("  ");
         for (char letra : letras) {
             System.out.print(letra + " ");
         }
-        System.out.print("         ");
+        System.out.print("           ");
         for (char letra : letras) {
             System.out.print(letra + " ");
         }
@@ -71,7 +71,8 @@ public class HundirFlota {
                 System.out.print(tableroPc[i][j] + " ");
             }
 
-            System.out.print("         ");
+            System.out.print("         " + i + " ");
+
 
             // Mostrar tablero de disparos PC
             for (int k = 0; k < tableroDisparosPc[i].length; k++) {
