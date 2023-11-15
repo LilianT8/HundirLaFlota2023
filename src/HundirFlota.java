@@ -19,6 +19,8 @@ public class HundirFlota {
     }
 
     public static void mostrarTablero(char[][] tableroJugador, char[] letras, char[][] tableroDisparos) {
+        System.out.println("********** BIENVENIDO/A AL JUEGO HUNDIR LA FLOTA ******************");
+        System.out.println();
         System.out.println("    TABLERO JUGADOR            TABLERO DISPAROS JUGADOR");
         System.out.print("  ");
         for (char letra : letras) {
@@ -80,7 +82,10 @@ public class HundirFlota {
             }
 
             System.out.println();
+
         }
+        System.out.println();
+        System.out.println("*******************************************************************");
     }
 
 
